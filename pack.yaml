@@ -1,0 +1,12 @@
+ref: python_test
+name: My Python Test Pack
+description: Nothing special.. just some python functions
+keywords:
+    - python
+    - test
+version: 0.0.1
+python_versions:
+  - "2"
+  - "3"
+author: Seemo
+email: seemo@cyberproof.com

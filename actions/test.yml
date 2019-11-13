@@ -1,0 +1,13 @@
+---
+name: python_test
+enabled: true
+runner_type: "python-script"
+description: "Print message to standard output."
+enabled: true
+entry_point: test.py
+parameters:
+    message:
+        type: string
+        description: "Name to print"
+        required: true
+        position: 0

@@ -7,7 +7,7 @@ enabled: true
 entry_point: test.py
 parameters:
     incident_body:
-        type: object
+        type: string
         description: "Incident body"
         required: true
         position: 0

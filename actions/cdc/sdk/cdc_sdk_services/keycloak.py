@@ -1,4 +1,4 @@
-from cdc_sdk_services.http import HttpJsonService
+from cdc.sdk.cdc_sdk_services.http import HttpJsonService
 
 class KeycloakService:
     def __init__(self, url, clientId, clientSecret):

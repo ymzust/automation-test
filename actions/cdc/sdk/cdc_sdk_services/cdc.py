@@ -1,5 +1,5 @@
-from cdc_sdk_services.http import HttpJsonService
-from cdc_sdk_services.keycloak import KeycloakService
+from cdc.sdk.cdc_sdk_services.http import HttpJsonService
+from cdc.sdk.cdc_sdk_services.keycloak import KeycloakService
 
 class CDCBackendService(HttpJsonService):
     def __init__(self, path, keycloak):

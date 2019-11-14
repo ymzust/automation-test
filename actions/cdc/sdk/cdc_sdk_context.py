@@ -4,10 +4,10 @@ import os
 import urllib3
 from dotmap import DotMap
 
-from cdc_sdk_services.cdc import CDCBackendService
-from cdc_sdk_services.keycloak import KeycloakService
-from swagger_client.api_client import ApiClient
-from swagger_client.configuration import Configuration
+from cdc.sdk.cdc_sdk_services.cdc import CDCBackendService
+from cdc.sdk.cdc_sdk_services.keycloak import KeycloakService
+from cdc.sdk.swagger_client.api_client import ApiClient
+from cdc.sdk.swagger_client.configuration import Configuration
 
 class Context:
     def __init__(self):

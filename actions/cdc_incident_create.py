@@ -7,7 +7,7 @@ class IncidentCreate(Action):
         incident = cdc.model.Incident(
             name=name,
             description=description,
-            organization=os.getenv('CDC_ORGANIZATION_KEY'),
+            organization=cdc.settings().organization,
             priority= priority,
             severity=severity,
             status="New",

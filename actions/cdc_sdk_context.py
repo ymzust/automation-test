@@ -55,15 +55,16 @@ class Context:
 
     def loadSettings(self):
         try:
-            path = os.path.join(os.getcwd(), '.env')
-            self.notify('environment variables file location: ' + path)
-            load_dotenv(dotenv_path=path, override=False, verbose=True)
+            #path = os.path.join(os.getcwd(), '.env')
+            #self.notify('environment variables file location: ' + path)
+            #load_dotenv(dotenv_path=path, override=False, verbose=True)
             self.settings = DotMap()
             self.settings.cdc.url = os.getenv('CDC_URL')
             self.settings.keycloak.instance = os.getenv('KEYCLOAK_URL')
             self.settings.keycloak.client.name = os.getenv('KEYCLOAK_CLIENT_ID')
             self.settings.keycloak.client.secret = os.getenv('KEYCLOAK_CLIENT_SECRET')
             self.settings.keycloak.user = os.getenv('KEYCLOAK_USER')
+            self.settings.organization = os.getenv('CDC_ORGANIZATION_KEY')
             return True
         except Exception as ex:
             self.notify('error while loading settings file', ex)

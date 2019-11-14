@@ -28,3 +28,6 @@ user = backend.UsersApi(Context.instance.client)
 webhook = backend.WebhooksApi(Context.instance.client)
 
 model = backend_models
+
+def settings():
+    return Context.instance.settings

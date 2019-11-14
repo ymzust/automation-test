@@ -1,10 +1,10 @@
-from cdc_sdk_context import Context
+from cdc.sdk.cdc_sdk_context import Context
 
-from swagger_client.api_client import ApiClient
-from swagger_client.configuration import Configuration
+from cdc.sdk.swagger_client.api_client import ApiClient
+from cdc.sdk.swagger_client.configuration import Configuration
 
-import swagger_client.api as backend
-import swagger_client.models as backend_models
+import cdc.sdk.swagger_client.api as backend
+import cdc.sdk.swagger_client.models as backend_models
 
 if (not Context.instance):
     Context.instance = Context()

@@ -1,5 +1,4 @@
 import cdc.sdk
-import json
 import os
 from st2common.runners.base_action import Action
 

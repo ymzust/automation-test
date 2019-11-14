@@ -16,4 +16,4 @@ class IncidentCreate(Action):
             tags=[],
             playbooks=[]
         )
-        return incident.create_incident(incident)
+        return cdc.incident.create_incident(incident)

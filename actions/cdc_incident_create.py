@@ -1,4 +1,4 @@
-import cdc.sdk
+import cdc
 import os
 from st2common.runners.base_action import Action
 
@@ -16,4 +16,4 @@ class IncidentCreate(Action):
             tags=[],
             playbooks=[]
         )
-        return cdc.sdk.incident.create_incident(incident)
+        return incident.create_incident(incident)

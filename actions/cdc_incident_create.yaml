@@ -6,8 +6,37 @@ description: "Create new incident in CDC Platform"
 enabled: true
 entry_point: test.py
 parameters:
-    incident_body:
+    name:
         type: string
-        description: "Incident body"
+        description: "Incident Name"
         required: true
         position: 0
+    description:
+        type: string
+        description: "Incident Description"
+        required: true
+        position: 1
+    priority:
+        type: string
+        enum: [ Low, Medium, High ]
+        description: "Incident Priority"
+        required: true
+        position: 2
+    severity:
+        type: string
+        enum: [ Low, Medium, High ]
+        description: "Incident Severity"
+        required: true
+        position: 3
+    source:
+        type: string
+        description: "Incident Source"
+        required: false
+        default: "manual"
+        position: 4
+    type:
+        type: string
+        description: "Incident Type"
+        required: false
+        default: "Other"
+        position: 5

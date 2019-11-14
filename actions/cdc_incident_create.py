@@ -4,7 +4,7 @@ import os
 from st2common.runners.base_action import Action
 
 class IncidentCreate(Action):
-    def run(self, name, description, priority, severity, source, type):
+    def run(self, incident_name, incident_description, incident_priority, incident_severity, incident_source, incident_type):
         organization = 
         incident = new_incident = cdc.model.Incident(
             name=name,

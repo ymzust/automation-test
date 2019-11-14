@@ -1,0 +1,13 @@
+---
+name: cdc_incident_create
+enabled: true
+runner_type: "python-script"
+description: "Create new incident in CDC Platform"
+enabled: true
+entry_point: test.py
+parameters:
+    incident_body:
+        type: object
+        description: "Incident body"
+        required: true
+        position: 0

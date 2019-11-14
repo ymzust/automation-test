@@ -4,7 +4,7 @@ enabled: true
 runner_type: "python-script"
 description: "Create new incident in CDC Platform"
 enabled: true
-entry_point: test.py
+entry_point: cdc_incident_create.py
 parameters:
     incident_name:
         type: string

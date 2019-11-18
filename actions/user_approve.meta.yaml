@@ -1,0 +1,13 @@
+pack: python_test
+enabled: true
+runner_type: orquesta
+name: User Approval Workflow
+entry_point: workflows/user_approve.yaml
+parameters:
+  something:
+    type: string
+    default: workflow
+  confirmation_duration:
+    type: number
+    default: 1440
+    required: true

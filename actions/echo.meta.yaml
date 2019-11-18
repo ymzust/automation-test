@@ -1,0 +1,9 @@
+pack: cdc_workflows_test_pack
+enabled: true
+runner_type: orquesta
+name: Echo Workflow
+entry_point: workflows/echo.yaml
+parameters:
+  something:
+    type: string
+    default: workflow

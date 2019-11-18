@@ -1,0 +1,15 @@
+version: 1.0
+tasks:
+  # [560, 147]
+  task1:
+    action: core.echo
+    next:
+      - when: <% succeeded() %>
+        publish:
+          - data: <% result().stdout %>
+    input:
+      message: hello <% ctx().something %>
+input:
+  - something
+output:
+  - message: <% ctx().data %>

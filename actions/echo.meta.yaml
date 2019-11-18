@@ -1,4 +1,4 @@
-pack: cdc_workflows_test_pack
+pack: python_test
 enabled: true
 runner_type: orquesta
 name: Echo Workflow

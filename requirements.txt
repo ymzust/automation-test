@@ -3,5 +3,5 @@ dotmap==1.3.8
 requests==2.22.0
 certifi==2019.9.11
 six==1.12.0
-urllib3==1.25.6
+urllib3==1.25.8
 SOAPpy-py3==0.52.24
